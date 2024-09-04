@@ -76,14 +76,11 @@ Query functions
 The generated functions have a specific form.
 
 Query functions only take keyword arguments, matching the variables defined in
-the query. Optional and arguments with defaults may naturally be omitted.
+the query. Optional and arguments with defaults may be omitted.
 
 The function returns the data you asked for as a dict. If the server returns an
 error, it is raised. (gqlmod does not support GraphQL's partial results at this
 time.)
-
-Note that wether query functions are synchronous or asynchronous is up to the
-provider; see its documentation.
 
 
 Using different provider contexts
